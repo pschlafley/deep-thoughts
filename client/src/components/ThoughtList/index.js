@@ -26,10 +26,10 @@ const ThoughtList = ({ thoughts, title }) => {
                             <Link to={`/thought/${thought._id}`}>
                                 <p>{thought.thoughtText}</p>
                             </Link>
-                            <p className='mb-0'>
+                            <Link to={`/thought/${thought._id}`} className='mb-0'>
                                 Reactions: {thought.reactionCount} || Click to {' '}
                                 {thought.reactionCount ? 'see' : 'start'} the discussion!
-                            </p>
+                            </Link>
                         </div>
                     </div>
                 ))}
